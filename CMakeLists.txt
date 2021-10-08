@@ -24,7 +24,7 @@ INCLUDE(CheckCXXSourceCompiles)
 CHECK_CXX_SOURCE_COMPILES(
 "
 #include<string>
-void main(){std::to_string(0);}
+int main(){std::to_string(0);}
 " HAVE_TO_STRING)
 
 IF(HAVE_TO_STRING)
